@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500" prefWidth="500" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.subbotted.mysql.ui.FXMLDocumentController">
+    <children>
+        
+        <ToolBar minHeight="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+           <items>
+                  <Pane HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="200.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Documents/iView%20Template/img/wbs-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+           </items>
+        </ToolBar>
+        <StackPane fx:id="mainContent" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0" />
+      <Pane layoutY="60.0" prefHeight="437.0" prefWidth="517.0">
+         <children>
+            <Pane layoutX="9.0" layoutY="6.0" prefHeight="38.0" prefWidth="500.0">
+               <children>
+                  <TextField layoutX="14.0" prefHeight="38.0" prefWidth="467.0" promptText="Enter MySQL query..." />
+               </children>
+            </Pane>
+            <Pane layoutX="-3.0" layoutY="52.0" prefHeight="381.0" prefWidth="517.0">
+               <children>
+                  <Button layoutX="25.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="467.0" text="Execute Query" />
+                  <TableView fx:id="results_table" layoutX="25.0" layoutY="53.0" prefHeight="314.0" prefWidth="467.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+    
+    </children>
+    
+</AnchorPane>
